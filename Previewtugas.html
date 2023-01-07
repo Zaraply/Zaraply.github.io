@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--Zaraply0075-->
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Rafli - TUGAS</title>
+        <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet'>
+        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        /* Mobile */
+        [class*="col-"] {
+            width: 100%;
+        }
+        @media only screen and (min-width: 600px) {
+            /* tablet */
+            .col-m-1 {width: 8.33%;}
+            .col-m-2 {width: 16.66%;}
+            .col-m-3 {width: 25%;}
+            .col-m-4 {width: 33.33%;}
+            .col-m-5 {width: 41.66%;}
+            .col-m-6 {width: 50%;}
+            .col-m-7 {width: 58.33%;}
+            .col-m-8 {width: 66.66%;}
+            .col-m-9 {width: 75%;}
+            .col-m-10 {width: 83.33%;}
+            .col-m-11 {width: 91.66%;}
+            .col-m-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+            /* desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+
+        .container {
+            margin-top: 150px
+        }
+
+        body {
+            background: #515158;
+            background: -webkit-linear-gradient(left, #515158, #a9a9a9);
+            background: -moz-linear-gradient(left, #515158, #777a7b);
+            background: -o-linear-gradient(left, #515158, #454748);
+            background: linear-gradient(to right, #515158, #454749);
+            font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma
+        }
+
+        ul {
+            list-style-type: none
+        }
+
+        a {
+            color: #b63b4d;
+            text-decoration: none
+        }
+
+        .accordion {
+            width: 100%;
+            max-width: 584px;
+            margin: 30px auto 20px;
+            background: #FFF;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 5px
+        }
+
+        .accordion .link {
+            cursor: pointer;
+            display: block;
+            padding: 15px 15px 15px 42px;
+            color: #4D4D4D;
+            font-size: 14px;
+            font-weight: 700;
+            border-bottom: 1px solid #CCC;
+            position: relative;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease
+        }
+
+        .accordion li:last-child .link {
+            border-bottom: 0
+        }
+
+        .accordion li i {
+            position: absolute;
+            top: 16px;
+            left: 12px;
+            font-size: 18px;
+            color: #595959;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease
+        }
+
+        .accordion li i.fa-chevron-down {
+            right: 12px;
+            left: auto;
+            font-size: 16px
+        }
+
+        .accordion li.open .link {
+            color: #AA00FF
+        }
+
+        .accordion li.open i {
+            color: #AA00FF
+        }
+
+        .accordion li.open i.fa-chevron-down {
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg)
+        }
+
+        .submenu {
+            display: none;
+            background: #444359;
+            font-size: 14px
+        }
+
+        .submenu li {
+            border-bottom: 1px solid #4b4a5e
+        }
+
+        .submenu a {
+            display: block;
+            text-decoration: none;
+            color: #d9d9d9;
+            padding: 12px;
+            padding-left: 42px;
+            -webkit-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease
+        }
+
+        .submenu a:hover {
+            background: #b63b4d;
+            color: #FFF
+        }
+        .z-depth-3 {
+        -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+        img.responsive-img,
+        video.responsive-video {
+        max-width: 100%;
+        height: auto;
+        }
+        .center, .center-align {
+        text-align: center;
+        }
+        </style>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+        <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    </head>
+    <body oncontextmenu='return false' class='snippet-body'>
+       <div class="container">
+        
+        <ul id="accordion" class="accordion"><br>
+        <div style="font-size: 25px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-laptop"></i> Eza Rafli Vernica Saputra / 21104410075</div><br>
+        <li>
+            <div class="link"><i class="fa fa-tasks"></i>Pertemuan 1<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li><a href="./Pertemuan1/praktik1.html">Praktek 1</a></li>
+                <li><a href="./Pertemuan1/praktik2.html">Praktek 2</a></li>
+                <li><a href="./Pertemuan1/praktik3.html">Praktek 3</a></li>
+                <li><a href="./Pertemuan1/praktik4.html">Praktek 4</a></li>
+                <li><a href="./Pertemuan1/tugaspraktikum1.html">Tugas 1</a></li>
+                <li><a href="./Pertemuan1/tugaspraktikum1_2.html">Tugas 2</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="fa fa-tasks"></i>Pertemua 2 dan 3<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li><a href="./Pertemuan2&3/laprak2_1.html">Praktek 1</a></li>
+                <li><a href="./Pertemuan2&3/laprak2_2.html">Praktek 2</a></li>
+                <li><a href="./Pertemuan2&3/Menu.html">Praktek 3</a></li>
+                <li><a href="./Pertemuan2&3/MenuHorizontal.html">Praktek 4</a></li>
+                <li><a href="./Pertemuan2&3/MenuNavbar.html">Menu Navbar</a></li>
+                <li><a href="./Pertemuan2&3/ListGroup.html">List Group 01</a></li>
+                <li><a href="./Pertemuan2&3/ListGroup2.html">List Group 02</a></li>
+                <li><a href="./Pertemuan2&3/BelajarTabel.html">Tabel 01</a></li>
+                <li><a href="./Pertemuan2&3/Tabel2.html">Tabel 02 </a></li>
+                <li><a href="./Pertemuan2&3/TugasPrak.html">Tugas</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="fa fa-tasks"></i>Pertemuan 4<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li><a href="./Pertemuan4/Latihan Praktikum/Prak1.html">Praktek 1</a></li>
+                <li><a href="./Pertemuan4/Latihan Praktikum/Prak2.html">Praktek 2</a></li>
+                <li><a href="./Pertemuan4/Latihan Praktikum/Prak3.html">Praktek 3</a></li>
+                <li><a href="./Pertemuan4/Latihan Praktikum/Prak4.html">Praktek 4</a></li>
+                <li><a href="./Pertemuan4/Latihan Praktikum/Prak5.html">Praktek 5</a></li>
+                <li><a href="./Pertemuan4/Latihan Praktikum/Prak6.html">Praktek 6</a></li>
+                <li><a href="./Pertemuan4/Latihan Praktikum/Prak7.html">Praktek 7</a></li>
+                <li><a href="./Pertemuan4/Latihan Praktikum/Prak8.html">Praktek 8</a></li>
+                <li><a href="./Pertemuan4/Latihan Praktikum/Prak8b.html">Praktek 8b</a></li>
+                <li><a href="./Pertemuan4/Latihan Praktikum/Prak9.html">Praktek 9</a></li>
+                <li><a href="./Pertemuan4/Latihan Praktikum/Prak10.html">Praktek 10</a></li>
+                <li><a href="./Pertemuan4/Tugas Praktikum/index.html">TUGAS</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="fa fa-tasks"></i>Pertemuan 5<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li><a href="./Pertemuan5/praktek_css1.html">Inline CSS</a></li>
+                <li><a href="./Pertemuan5/praktek_css2.html">Embeeded CSS</a></li>
+                <li><a href="./Pertemuan5/praktek_css3.html">External Style Sheet</a></li>
+                <li><a href="./Pertemuan5/Tugas/web_prakdesweb_css.html">CSS Web Template</a></li>
+                <li><a href="./Pertemuan5/Tugas/implementasi_tugas.html">KALAP - Tugas</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<script type='text/javascript'>$(function() {
+var Accordion = function(el, multiple) {
+this.el = el || {};
+this.multiple = multiple || false;
+
+var links = this.el.find('.link');
+
+links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+}
+
+Accordion.prototype.dropdown = function(e) {
+var $el = e.data.el;
+$this = $(this),
+$next = $this.next();
+
+$next.slideToggle();
+$this.parent().toggleClass('open');
+
+if (!e.data.multiple) {
+$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+};
+}
+
+var accordion = new Accordion($('#accordion'), false);
+});</script>
+                            </body>
+                        </html>
